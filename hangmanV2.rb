@@ -11,11 +11,11 @@ loop do
     case gets.chomp.to_i
     when 1
       secretWord = File.readlines("dico.txt").sample
-      secretWord.delete!("\n")
+      secretWord.delete!("\n").upcase!
       break
     when 2
       print "Enter some word : "
-      secretWord = gets.chomp
+      secretWord = gets.chomp.upcase
       break
     else
       puts "I don't understand !"
@@ -30,7 +30,7 @@ loop do
 
       puts cache
       print "Guess a letter, type \"found\" or \"stop\" : "
-      guess = gets.chomp
+      guess = gets.chomp.upcase
 
       if guess.length == 1
 
@@ -44,9 +44,9 @@ loop do
           end
         end
 
-      elsif guess == "found"
+      elsif guess == "FOUND"
         print "So wut ? "
-        if gets.chomp == secretWord
+        if gets.chomp.upcase == secretWord
           cache = secretWord
           print "YEAH ! "
           score += 10
@@ -54,7 +54,7 @@ loop do
           puts "Nope !"
         end
       
-      elsif guess == "stop"
+      elsif guess == "STOP"
         print "Are you sure ? (y/n) "
         if gets.chomp == 'y'
           cache = secretWord
