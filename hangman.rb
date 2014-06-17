@@ -1,6 +1,5 @@
 puts " >>> A hangman game ! You know the rules... <<<"
-score = 0
-secretWord = String.new
+score, secretWord = 0, String.new
 
 loop do
 
