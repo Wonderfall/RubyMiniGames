@@ -1,4 +1,4 @@
-puts " >>> You have to find a secret word, each player has 5 tries ! <<<"
+puts "\n >>> You have to find a secret word, each player has 5 tries ! <<<"
 score = 0
 secretWord = String.new
 

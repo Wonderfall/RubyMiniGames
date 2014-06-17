@@ -1,4 +1,4 @@
-puts " >>> A hangman game ! You know the rules... <<<"
+puts "\n >>> A hangman game ! You know the rules... <<<"
 score, secretWord = 0, String.new
 
 loop do

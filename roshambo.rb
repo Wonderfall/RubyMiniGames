@@ -1,4 +1,4 @@
-puts " >>> A Rock-Paper-Scissors game <<< \n"
+puts "\n >>> A Rock-Paper-Scissors game <<< \n"
 score, playerChoice = 0, 0
 print " >>> How many rounds : "
 

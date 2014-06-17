@@ -1,4 +1,4 @@
-puts ">>> Nickname generator <<<"
+puts "\n >>> Nickname generator <<<"
 
 vowels, conson = "aaaeeeeeiiiooouuy", "bbbcccdddffgghhjjklllmmnnppqrrrssstttvvwxz"
 nick = String.new
