@@ -8,7 +8,7 @@ print "How many ? "
 
 (gets.chomp.to_i / 2).times do
   nick += vowels[rand(0..vowels.length)]
-	nick += conson[rand(0..conson.length)]
+  nick += conson[rand(0..conson.length)]
 end
 
 at_exit { puts "\nYour new nickname is #{nick.capitalize} !" }
