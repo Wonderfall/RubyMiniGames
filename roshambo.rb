@@ -4,10 +4,8 @@ print " >>> How many rounds : "
 
 gets.chomp.to_i.times do
 
-  puts
-
   loop do
-    print " >>> 1.Rock 2.Paper 3.Scissors : "
+    print "\n >>> 1.Rock 2.Paper 3.Scissors : "
     playerChoice = gets.chomp.to_i
     print " > You played with the "
     case playerChoice
