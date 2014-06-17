@@ -11,4 +11,4 @@ print "How many ? "
 	nick += conson[rand(0..conson.length)]
 end
 
-at_exit { puts "\nYour new nickname is #{nick.capitalize} !"}
+at_exit { puts "\nYour new nickname is #{nick.capitalize} !" }
