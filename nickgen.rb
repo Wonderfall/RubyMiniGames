@@ -1,7 +1,6 @@
 puts ">>> Nickname generator <<<"
 
-vowels = "aaaeeeeeiiiooouuy"
-conson = "bbbcccdddffgghhjjklllmmnnppqrrrssstttvvwxz"
+vowels, conson = "aaaeeeeeiiiooouuy", "bbbcccdddffgghhjjklllmmnnppqrrrssstttvvwxz"
 nick = String.new
 
 puts "ADVICE : choose between 3 and 12 letters will bring better results"
