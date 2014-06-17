@@ -30,14 +30,12 @@ loop do
     puts "--- #{6-i} tries/try left."
     print "What's this word : #{shakedWord} ? "
     if gets.chomp == secretWord
-      puts "Well played !"
+      puts "Well played !\n"
       score += 5
-      puts
       break
     else
-      puts "Try again..."
+      puts "Try again...\n"
       score -= 1
-      puts
     end
   end
 

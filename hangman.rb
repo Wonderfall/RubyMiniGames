@@ -68,9 +68,8 @@ loop do
       end
 
       if cache == secretWord
-        puts "The word was \"#{secretWord}\" !"
+        puts "The word was \"#{secretWord}\"!\n\n"
         score += 20
-        2.times { puts }
         break
       else
         score -= 1
