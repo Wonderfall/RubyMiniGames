@@ -1,7 +1,7 @@
 RubyMiniGames
 =============
 
-Some stupid games written in Ruby that I provide to give you some fun, I'm learning this language! ;) \r
+Some stupid games written in Ruby that I provide to give you some fun, I'm learning this language!
 According to the LICENSE file, these files are under the WTFPL. See the LICENSE file for more informations!
 
 At the time of my last commit, this git contains the following games :
