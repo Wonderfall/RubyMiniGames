@@ -10,27 +10,27 @@ gets.chomp.to_i.times do
     print " > You played with the "
     case playerChoice
     when 1
-      print "rock.\n"
+      puts "rock."
       break
     when 2
-      print "paper.\n"
+      puts "paper."
       break
     when 3
-      print "scissors.\n"
+      puts "scissors."
       break
     else
-      puts " >>> Invalid choice."
+      puts "INVALID CHOICE"
     end
   end
 
   print " > The AI played with the "
   case aiChoice = rand(1..3)
   when 1
-    print "rock.\n"
+    puts "rock."
   when 2
-    print "paper.\n"
+    puts "paper."
   when 3
-    puts "scissors.\n"
+    puts "scissors."
   end
   
   if playerChoice == 1 && aiChoice == 3 || playerChoice == 2 && aiChoice == 1 || playerChoice == 3 && aiChoice == 2
