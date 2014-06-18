@@ -8,7 +8,7 @@ loop do
 
     print " >>> 1 or 2 players ? "
 
-    case gets.chomp.to_i
+    case gets.to_i
     when 1
       secretWord = File.readlines("dico.txt").sample
       secretWord.delete!("\n")

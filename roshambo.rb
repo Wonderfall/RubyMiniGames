@@ -2,7 +2,7 @@ puts "\n >>> A Rock-Paper-Scissors game <<< \n"
 score, playerChoice = 0, 0
 print " >>> How many rounds : "
 
-gets.chomp.to_i.times do
+gets.to_i.times do
 
   loop do
     print "\n >>> 1.Rock 2.Paper 3.Scissors : "
