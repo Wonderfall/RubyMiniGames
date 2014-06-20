@@ -3,19 +3,18 @@ require 'SecureRandom'
 puts "\n >>> Password generator <<< \n"
 print " >>> Display some advices or informations ? (y/n) "
 
-loop do 
-  break if gets.chomp == 'n'
+if gets.chomp == 'y'
   puts " > This script uses the SecureRandom.urlsafe_base64 method, low but efficient"
   puts " > a..z ; A..Z ; 0..9 ; - ; _ : used by default to ensure safety"
   puts " > More characters enhances the security at the cost of the readability"
   puts " > You may accept to use the other symbols if you want more security"
-  break
 end
 
 print "\n >>> How many characters? "
 passwordLength, symbolsUse = gets.to_i, 0
 
 print " >>> Use symbols? (y/n) "
+
 if gets.chomp == 'y'
   symbols = "&~#([|^@])}{$€#*µ%!,;:.?<>/+"
   print " >>> How many? "
@@ -23,13 +22,13 @@ if gets.chomp == 'y'
 end
 
 puts "\n >>> Generating your password, it might take a while..."
-password = SecureRandom.urlsafe_base64(passwordLength-symbolsUse)[0..(passwordLength-symbolsUse)-1]
+password = SecureRandom.urlsafe_base64(passwordLength-symbolsUse)[1..(passwordLength-symbolsUse)]
 symbolsUse.times { password += symbols[rand(0..symbols.length-1)] }
 if symbolsUse > 0 then password = password.split(//).shuffle.join end
 
 puts " >>> Your new password is : #{password}"
-
 print " >>> Check the hackability of this ? (y/n) "
+
 if gets.chomp == 'y'
 
   hackability = symbolsUse > 0 ? (92 * password.length) ** 2 : (64 * password.length) ** 2
